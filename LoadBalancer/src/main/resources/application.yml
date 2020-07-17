@@ -1,0 +1,14 @@
+# Spring Boot
+spring:
+  profiles:
+    active: prod
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    org.springframework: ERROR
+    com.iptq.loadbalancer: TRACE
+    com.iptq.loadbalancer.servide: DEBUG
+
+defaultStrategy: ROUNDROBIN
